@@ -11,9 +11,19 @@ function textInput (e){
    var addTextEL = document.createElement("div");
    textSpace.appendChild(addTextEL);
 
-   textSpace.textContent = input.value;
-   console.log(input.value);
-   
-   
+   var word = input.value;
+   textSpace.textContent = word;
+   console.log(word);
 
+   wordcounter(word)
+
+}
+
+//function to count letters in word
+
+function wordcounter(word){
+   // evaluate how many letters in word
+   let length = word.length;
+
+   console.log(length);
 }

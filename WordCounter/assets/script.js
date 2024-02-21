@@ -1,16 +1,19 @@
 
-var addText = document.querySelector('#addText')
+var addText = document.querySelector('#wordInput')
 var textSpace = document.querySelector('#textSpace')
+var input = document.querySelector('#word');
 
 addText.addEventListener('click', textInput)
 
 //function to input word 
-function textInput (){ 
+function textInput (e){ 
+   e.preventDefault();
    var addTextEL = document.createElement("div");
    textSpace.appendChild(addTextEL);
 
-   var input = prompt('ples enter a word')
-
-   textSpace.textContent = input
+   textSpace.textContent = input.value;
+   console.log(input.value);
    
+   
+
 }

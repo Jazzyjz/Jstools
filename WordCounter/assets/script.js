@@ -9,8 +9,9 @@ function textInput (){
    var addTextEL = document.createElement("div");
    textSpace.appendChild(addTextEL);
 
-   var input = prompt('ples enter a word')
+   var input = document.querySelector('#word').value ;
 
    textSpace.textContent = input
    
+
 }

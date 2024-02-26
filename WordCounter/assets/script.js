@@ -25,5 +25,8 @@ function wordcounter(word){
    // evaluate how many letters in word
    let length = word.length;
 
+   const words = word.split(' ');
+   console.log(words.length);
+
    console.log(length);
 }
